@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fasostudents">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FasoStudents">
+        <activity
+            android:name=".Profil.ModifyPro"
+            android:exported="true"
+            android:parentActivityName=".Cat.Profi"
+            />
+        <activity
+            android:name=".Cat.ShareProject"
+            android:exported="false" />
+        <activity
+            android:name=".Cat.Projects"
+            android:exported="true"
+            android:parentActivityName=".Cat.Setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cat.Profi"
+            android:exported="true"
+            android:parentActivityName=".Cat.Setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profil.WiewPro"
+            android:exported="true"
+            android:parentActivityName=".Main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cat.Setting"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Indent.ResetPass"
+            android:exported="true"
+            android:parentActivityName=".Indent.Acceuille"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Indent.verifAct"
+            android:exported="true"
+            android:parentActivityName=".Indent.Acceuille"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Indent.CompletPro"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Indent.CreeAct"
+            android:exported="true"
+            android:parentActivityName=".Indent.Acceuille"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Indent.ConAct"
+            android:exported="true"
+            android:parentActivityName=".Indent.Acceuille"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Indent.Acceuille"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

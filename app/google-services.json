@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "586536621435",
+    "project_id": "faso-students-964a6",
+    "storage_bucket": "faso-students-964a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586536621435:android:99d86cafe3811b13a459de",
+        "android_client_info": {
+          "package_name": "com.example.fasostudents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586536621435-sdg78sg6pr0ltml9iv570f5hum35c1v1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-ICKqkKFUiIFqypbk_VLk1LxY1KPGt4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586536621435-sdg78sg6pr0ltml9iv570f5hum35c1v1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
