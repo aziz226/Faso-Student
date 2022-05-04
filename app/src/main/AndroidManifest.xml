@@ -14,10 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FasoStudents">
         <activity
-            android:name=".Profil.ModifyPro"
+            android:name=".Profil.MesAmis"
+            android:exported="false" />
+        <activity
+            android:name=".Posts.PostWrit"
             android:exported="true"
-            android:parentActivityName=".Cat.Profi"
-            />
+            android:parentActivityName=".Main.MainActivity" />
+        <activity
+            android:name=".Posts.PostImg"
+            android:exported="true"
+            android:parentActivityName=".Main.MainActivity" />
         <activity
             android:name=".Cat.ShareProject"
             android:exported="false" />
@@ -27,7 +33,7 @@
             android:parentActivityName=".Cat.Setting"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Cat.Profi"
+            android:name=".Profil.Profi"
             android:exported="true"
             android:parentActivityName=".Cat.Setting"
             android:screenOrientation="portrait" />

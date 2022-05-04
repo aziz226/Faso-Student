@@ -2,11 +2,11 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardUseCompatPadding="true"
     app:cardCornerRadius="10dp"
     app:cardElevation="8dp"
-    app:contentPadding="2dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    app:contentPadding="2dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,21 +14,20 @@
         android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/cpimg"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_centerVertical="true"
+            android:id="@+id/idpim"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/img" />
 
         <TextView
-            android:id="@+id/row_un"
+            android:id="@+id/row_pun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="20dp"
-            android:layout_toRightOf="@id/cpimg"
+            android:layout_toRightOf="@id/idpim"
             android:text="username"
             android:textColor="@color/marron"
             android:textSize="18sp"
@@ -38,50 +37,63 @@
             android:id="@+id/tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/row_un"
+            android:layout_below="@id/row_pun"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="3dp"
-            android:layout_toRightOf="@+id/cpimg"
-            android:text="Filiere:"
+            android:layout_toRightOf="@+id/idpim"
+            android:text="Publie le"
             android:textSize="14sp"
             android:textStyle="italic" />
 
         <TextView
-            android:id="@+id/row_dm"
+            android:id="@+id/row_pdate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/row_un"
-            android:layout_marginLeft="5dp"
+            android:layout_below="@id/row_pun"
+            android:layout_marginLeft="2dp"
             android:layout_marginTop="3dp"
             android:layout_toRightOf="@+id/tv"
             android:text=""
-            android:textColor="@color/bleue"
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/tv2"
+            android:id="@+id/row_ptime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/row_dm"
-            android:layout_marginLeft="25dp"
+            android:layout_below="@id/row_pun"
+            android:layout_marginLeft="2dp"
             android:layout_marginTop="3dp"
-            android:layout_toRightOf="@+id/cpimg"
-            android:text="Institue:"
-            android:textSize="14sp"
-            android:textStyle="italic"
-            />
-
-        <TextView
-            android:id="@+id/row_sch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/row_dm"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="3dp"
-            android:layout_toRightOf="@+id/tv2"
+            android:layout_toRightOf="@+id/row_pdate"
             android:text=""
-            android:textColor="@color/bleue"
             android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/idposdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idpim"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Description du texte"
+            android:textSize="18sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/idposdes"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:id="@+id/idpospho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/post"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 

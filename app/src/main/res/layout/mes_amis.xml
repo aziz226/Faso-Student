@@ -4,33 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profil.ModifyPro">
+    tools:context=".Profil.MesAmis">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/mptb"
+        android:id="@+id/ctb"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#241332"
+        android:background="@color/marron"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_scrollFlags="scroll|enterAlways" />
 
     <RelativeLayout
         android:id="@+id/corl"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_below="@+id/mptb"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ctb"
         android:background="@drawable/app_bar_des">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Se connecter"
+            android:layout_centerInParent="true"
+            android:text="Mes amis"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold" />
 
     </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/corl"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/id_my_friend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
 
 </RelativeLayout>

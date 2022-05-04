@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cat.Profi">
+    tools:context=".Profil.Profi">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/ptb"
@@ -14,256 +14,336 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_scrollFlags="scroll|enterAlways" />
 
-    <ImageView
-        android:id="@+id/id_img"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/image" />
-
-    <RelativeLayout
-        android:id="@+id/r"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/back_design">
+        >
 
-        <TextView
-            android:id="@+id/pun"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:text=""
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/marron"
-            android:textSize="22sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/igmsc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/pun"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="8dp"
-            android:text="Institue: " />
-
-        <TextView
-            android:id="@+id/psc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/pun"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="8dp"
-            android:layout_toRightOf="@+id/igmsc"
-            android:textColor="@color/marron"
-            android:text=""
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/pun"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/btn_design"
-            android:onClick="btnModifyPro"
-            android:padding="5dp"
-            android:text="Modifier"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:id="@+id/imgfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/igmsc"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="8dp"
-            android:text="Filiere: " />
-
-        <TextView
-            android:id="@+id/pf"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/psc"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="6dp"
-            android:layout_toRightOf="@+id/imgfil"
-            android:text=""
-            android:textColor="@color/marron"
-            android:textSize="16sp" />
-
-
-        <ScrollView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/pf"
-            android:layout_marginTop="10dp">
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/id_img"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
 
             <RelativeLayout
+                android:id="@+id/r"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/back_design">
+
+                <TextView
+                    android:id="@+id/pun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/marron"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/igmsc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pun"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Institue: " />
+
+                <TextView
+                    android:id="@+id/psc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pun"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/igmsc"
+                    android:textColor="@color/marron"
+                    android:text=""
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pun"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/btn_design"
+                    android:onClick="btnModifyPro"
+                    android:padding="5dp"
+                    android:text="Modifier"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="330dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="5dp"
-                    app:cardElevation="8dp"
-                    app:cardUseCompatPadding="true"
-                    app:contentPadding="2dp">
+                <TextView
+                    android:id="@+id/imgfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/igmsc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Filiere: " />
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/pf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/psc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/imgfil"
+                    android:text=""
+                    android:textColor="@color/marron"
+                    android:textSize="16sp" />
 
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/c1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            app:cardCornerRadius="5dp"
-                            app:cardElevation="8dp"
-                            app:cardUseCompatPadding="true"
-                            app:contentPadding="2dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="8dp"
+                        android:layout_below="@+id/pf"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
 
-                            <LinearLayout
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/abt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:layout_marginLeft="10dp"
+                                android:text="A propos de moi:"
+                                android:textColor="@color/marron"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
 
-                                <ImageView
-                                    android:layout_width="120dp"
-                                    android:layout_height="80dp"
-                                    android:src="@drawable/projection" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Mes Projets"
-                                    android:textAlignment="center"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="15dp"
-                            android:layout_weight="1"
-                            app:cardCornerRadius="5dp"
-                            app:cardElevation="8dp"
-                            app:cardUseCompatPadding="true"
-                            app:contentPadding="2dp">
-
-                            <LinearLayout
+                            <TextView
+                                android:id="@+id/cmpt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:layout_below="@+id/abt"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Competences: " />
 
-                                <ImageView
-                                    android:layout_width="120dp"
-                                    android:layout_height="80dp"
-                                    android:src="@drawable/friends" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Mes amis"
-                                    android:textAlignment="center"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold" />
-
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/c1"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="15dp"
-                            app:cardCornerRadius="5dp"
-                            app:cardElevation="8dp"
-                            app:cardUseCompatPadding="true"
-                            app:contentPadding="2dp">
-
-                            <LinearLayout
+                            <TextView
+                                android:id="@+id/idcompet"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:layout_below="@+id/abt"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_toRightOf="@+id/cmpt"
+                                android:text=""
+                                android:textColor="@color/marron"
+                                android:textSize="16sp" />
 
-                                <ImageView
-                                    android:layout_width="120dp"
-                                    android:layout_height="70dp"
-                                    android:src="@drawable/blog" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Mes publications"
-                                    android:textAlignment="center"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/c1"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            app:cardCornerRadius="5dp"
-                            app:cardElevation="8dp"
-                            app:cardUseCompatPadding="true"
-                            app:contentPadding="2dp">
-
-                            <LinearLayout
+                            <TextView
+                                android:id="@+id/exp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:layout_below="@+id/idcompet"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Experiences: " />
 
-                                <ImageView
-                                    android:layout_width="120dp"
-                                    android:layout_height="80dp"
-                                    android:src="@drawable/groupe" />
+                            <TextView
+                                android:id="@+id/idexper"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/idcompet"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_toRightOf="@+id/exp"
+                                android:text=""
+                                android:textColor="@color/marron"
+                                android:textSize="16sp" />
 
-                                <TextView
-                                    android:layout_width="match_parent"
+                            <TextView
+                                android:id="@+id/idprodesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/idexper"
+                                android:layout_marginLeft="20dp"
+                                android:text=""
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="330dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/cv"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="8dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/c1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="8dp"
+                                app:cardUseCompatPadding="true"
+                                app:contentPadding="2dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Mes groupes"
-                                    android:textAlignment="center"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
+                                    android:orientation="vertical">
 
-                        </androidx.cardview.widget.CardView>
+                                    <ImageView
+                                        android:layout_width="120dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/projection" />
 
-                    </RelativeLayout>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mes Projets"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="8dp"
+                                app:cardUseCompatPadding="true"
+                                android:onClick="friendbtn"
+                                app:contentPadding="2dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="120dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/friends" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mes amis"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/c1"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="8dp"
+                                app:cardUseCompatPadding="true"
+                                app:contentPadding="2dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="120dp"
+                                        android:layout_height="70dp"
+                                        android:src="@drawable/blog" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mes publications"
+                                        android:textAlignment="center"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/c1"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="8dp"
+                                app:cardUseCompatPadding="true"
+                                app:contentPadding="2dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="120dp"
+                                        android:layout_height="80dp"
+                                        android:src="@drawable/groupe" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mes groupes"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
 
             </RelativeLayout>
-        </ScrollView>
 
-    </RelativeLayout>
 
+    </ScrollView>
 
 </RelativeLayout>

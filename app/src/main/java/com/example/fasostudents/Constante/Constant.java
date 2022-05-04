@@ -20,6 +20,10 @@ public class Constant {
     public final static String KEY_COMPETENCE= "Competences";
     public final static String KEY_EXPER= "Experiences";
     public final static String KEY_PRO_DESCR= "Apropos_de_moi";
+    public final static String KEY_DATE= "Date";
+    public final static String KEY_HEURE= "Heure";
+    public final static String KEY_POSTDES= "Pub_description";
+    public final static String KEY_POSTIMG_URL= "PostUrl";
 
 
 }

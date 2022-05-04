@@ -39,8 +39,11 @@ public class FriendFrag extends Fragment {
         View view= inflater.inflate(R.layout.friend_frag, container, false);
 
         recyclerView= view.findViewById(R.id.recyc_user);
+        LinearLayoutManager layoutManager= new LinearLayoutManager(getContext());
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        layoutManager.setReverseLayout(true);
+        layoutManager.setStackFromEnd(true);
+        recyclerView.setLayoutManager(layoutManager);
 
         userList= new ArrayList<>();
 
@@ -69,11 +72,8 @@ public class FriendFrag extends Fragment {
                     recyclerView.setAdapter(adapterUser);
                 }
             }
-
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
+            public void onCancelled(@NonNull DatabaseError error) { }
         });
     }
 

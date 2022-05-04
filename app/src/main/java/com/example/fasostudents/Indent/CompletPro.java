@@ -206,8 +206,8 @@ public class CompletPro extends AppCompatActivity {
 
         randomKey= saveCurrentDate+saveCurrenTime;
 
-        postRef= FirebaseStorage.getInstance().getReference().child(Constant.KEY_USER)
-                .child(imageUri.getLastPathSegment()+randomKey+".JPG");
+        postRef= FirebaseStorage.getInstance().getReference()
+                .child(Constant.KEY_PROIMG).child(imageUri.getLastPathSegment()+randomKey+".JPG");
 
         postRef.putFile(imageUri).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {

@@ -41,7 +41,7 @@ public class WiewPro extends AppCompatActivity {
         myId= FirebaseAuth.getInstance().getCurrentUser().getUid();
         userRef= FirebaseDatabase.getInstance().getReference().child(Constant.KEY_USER).child(userId);
         myRef= FirebaseDatabase.getInstance().getReference().child(Constant.KEY_USER).child(myId)
-                .child(Constant.KEY_FRIENDS);
+                .child(Constant.KEY_FRIENDS).child(userId);
 
         un= findViewById(R.id.wp_un);
         ui= findViewById(R.id.wp_sch);
@@ -121,7 +121,7 @@ public class WiewPro extends AppCompatActivity {
                     userMap.put(Constant.KEY_EXPER, exper);
                     userMap.put(Constant.KEY_PRO_DESCR, desc);
 
-                    myRef.child(userId).updateChildren(userMap).addOnCompleteListener(task -> {
+                    myRef.updateChildren(userMap).addOnCompleteListener(task -> {
                         if (task.isSuccessful()){
                             Toast.makeText(WiewPro.this, "Vous avez ajouter "+nam+" comme un ami",
                                     Toast.LENGTH_SHORT).show();

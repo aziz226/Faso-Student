@@ -12,6 +12,7 @@
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/drawable/cree_des.xml" value="0.1455" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/drawable/ic_fil.xml" value="0.156" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/drawable/ic_friend.xml" value="0.156" />
+        <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/drawable/post_design.xml" value="0.12" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/drawable/rl_des.xml" value="0.1455" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/activity_acceuille.xml" value="0.2" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/activity_complet_pro.xml" value="0.2" />
@@ -26,10 +27,14 @@
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/friend_frag.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/home_frag.xml" value="0.22" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/list_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/mes_amis.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/modify_pro.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/notif_frag.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/post_img.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/profi.xml" value="0.22" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/projects.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/row_modif.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/row_post.xml" value="0.22" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/row_user.xml" value="0.22" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/setting.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Abdoul Aziz/AndroidStudioProjects/FasoStudents/app/src/main/res/layout/setting_frag.xml" value="0.20416666666666666" />

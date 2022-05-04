@@ -5,28 +5,20 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 
-import com.example.fasostudents.Cat.Profi;
+import com.example.fasostudents.Profil.Profi;
 import com.example.fasostudents.Cat.Projects;
 import com.example.fasostudents.Cat.Setting;
-import com.example.fasostudents.Constante.IntAct;
 import com.example.fasostudents.Constante.PassAct;
-import com.example.fasostudents.Indent.Acceuille;
 import com.example.fasostudents.R;
-import com.google.android.material.tabs.TabLayout;
-import com.google.firebase.auth.FirebaseAuth;
 
 public class SettingFrag extends Fragment {
 

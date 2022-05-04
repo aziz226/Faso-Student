@@ -1,7 +1,10 @@
 package com.example.fasostudents.Constante;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 
 public class PassAct {
     Context context;
@@ -12,6 +15,7 @@ public class PassAct {
         this.aClass = aClass;
 
         Intent intent= new Intent(context, aClass);
-        context.startActivity(intent);
+        Bundle b =ActivityOptions.makeSceneTransitionAnimation((Activity) context).toBundle();
+        context.startActivity(intent, b);
     }
 }
